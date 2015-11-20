@@ -49,3 +49,5 @@ end
 gem 'devise'
 gem 'cancancan'
 gem 'rolify'
+
+gem 'mysql2', '~> 0.3.18'

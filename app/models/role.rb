@@ -5,6 +5,10 @@ class Role < ActiveRecord::Base
   validates :resource_type,
             :inclusion => { :in => Rolify.resource_types },
             :allow_nil => true
+            
+  #might need to enforce in the database layer as well            
+  validates_uniqueness_of :name, case_sensitive: false, scope: [:resource_type, :resource_id]
 
   scopify
+  
 end

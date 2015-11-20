@@ -45,3 +45,7 @@ group :development do
   gem 'spring'
 end
 
+#authentication and authorization
+gem 'devise'
+gem 'cancancan'
+gem 'rolify'

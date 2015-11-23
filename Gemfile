@@ -51,3 +51,6 @@ gem 'cancancan'
 gem 'rolify'
 
 gem 'mysql2', '~> 0.3.18'
+
+#custom minitest report
+gem 'minitest-reporters'
